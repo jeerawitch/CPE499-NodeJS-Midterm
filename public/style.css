@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script&family=Lilita+One&family=Noto+Sans+Thai&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Alfa+Slab+One&family=Dancing+Script&family=Lilita+One&family=Noto+Sans+Thai&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/football_staduim.jpeg);
+  background-size: cover;
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: darkslateblue;
+  z-index: 2;
+}
+
+#Logo {
+  width: 100px;
+  height: 80px;
+}
+
+h1 {
+  color: white;
+  padding: 20px 0;
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.club {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+table {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 18%);
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+table::after {
+  content: "";
+  height: 110%;
+  width: 108%;
+  position: absolute;
+  top: -5%;
+  left: -4%;
+  z-index: -1;
+  backdrop-filter: blur(1px) saturate(200%);
+  -webkit-backdrop-filter: blur(1px) saturate(200%);
+  background-color: rgba(17, 25, 40, 0.6);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  box-shadow: 0px 2px 23px 1px rgba(255, 255, 255, 0.71);
+  -webkit-box-shadow: 0px 2px 23px 1px rgba(255, 255, 255, 0.71);
+  -moz-box-shadow: 0px 2px 23px 1px rgba(255, 255, 255, 0.71);
+}
+
+th,
+td {
+  border: 1px solid rgb(171, 170, 170);
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: purple;
+  color: white;
+  padding: 20px;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+td {
+  padding: 10px 0;
+}
+
+tr:nth-child(even) {
+  background-color: gainsboro;
+}
+
+tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: lightblue;
+}
+
+h3 {
+  color: white;
+  padding: 20px 0;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 5px;
+  }
+
+  .header {
+    position: absolute;
+    top: -5px;
+    left: -3px;
+    gap: 0.5rem;
+  }
+
+  #Top {
+    display: none;
+  }
+
+  .club {
+    margin-left: 0;
+  }
+
+  img {
+    display: none;
+  }
+
+  table {
+    transform: translate(-50%, 20%);
+  }
+
+  table::after {
+    width: 108%;
+  }
+
+  th {
+    padding: 1.5px;
+  }
+
+  td {
+    padding: 10 0px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  table::after {
+    width: 105%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  th {
+    padding: 0;
+  }
+  table::after {
+    width: 103%;
+  }
+}

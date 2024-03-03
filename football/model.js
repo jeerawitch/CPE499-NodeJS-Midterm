@@ -1,0 +1,98 @@
+const data = [
+  {
+    Position: 1,
+    Club: "<div class='club'><img src='./images/Liverpool.png' alt='Liverpool.png'> Liverpool </div>",
+    Played: 26,
+    Won: 18,
+    Drawn: 6,
+    Lost: 2,
+    Points: 60,
+  },
+  {
+    Position: 2,
+    Club: "<div class='club'><img src='./images/Manchester_City.png' alt='Manchester_City.png'> Manchester City </div>",
+    Played: 26,
+    Won: 18,
+    Drawn: 5,
+    Lost: 3,
+    Points: 59,
+  },
+  {
+    Position: 3,
+    Club: "<div class='club'><img src='./images/Arsenal.png' alt='Arsenal.png'> Arsenal </div>",
+    Played: 26,
+    Won: 18,
+    Drawn: 4,
+    Lost: 4,
+    Points: 58,
+  },
+  {
+    Position: 4,
+    Club: "<div class='club'><img src='./images/Aston_Villa.png' alt='Aston_Villa.png'> Aston Villa </div>",
+    Played: 26,
+    Won: 16,
+    Drawn: 4,
+    Lost: 6,
+    Points: 52,
+  },
+  {
+    Position: 5,
+    Club: "<div class='club'> <img src='./images/Tottenham_Hotspur.png' alt='Tottenham_Hotspur.png'> Tottenham Hotspur </div>",
+    Played: 25,
+    Won: 14,
+    Drawn: 5,
+    Lost: 6,
+    Points: 47,
+  },
+  {
+    Position: 6,
+    Club: "<div class='club'> <img src='./images/Manchester_United.png' alt='Manchester_United.png'> Manchester United </div>",
+    Played: 26,
+    Won: 14,
+    Drawn: 2,
+    Lost: 10,
+    Points: 44,
+  },
+  {
+    Position: 7,
+    Club: "<div class='club'> <img src='./images/Brighton.png' alt='Brighton.png'> Brighton </div>",
+    Played: 26,
+    Won: 10,
+    Drawn: 9,
+    Lost: 7,
+    Points: 39,
+  },
+  {
+    Position: 8,
+    Club: "<div class='club'> <img src='./images/WestHam_United.png' alt='WesHam_United.png'> WestHam United  </div>",
+    Played: 26,
+    Won: 11,
+    Drawn: 6,
+    Lost: 9,
+    Points: 39,
+  },
+  {
+    Position: 9,
+    Club: "<div class='club'> <img src='./images/Wolverhampton.png' alt='Wolverhampton.png'> Wolverhampton </div>",
+    Played: 26,
+    Won: 11,
+    Drawn: 5,
+    Lost: 10,
+    Points: 38,
+  },
+  {
+    Position: 10,
+    Club: "<div class='club'> <img src='./images/Newcastle_United.png' alt='Newcastle_United.png'> Newcastle United </div>",
+    Played: 26,
+    Won: 11,
+    Drawn: 4,
+    Lost: 11,
+    Points: 37,
+  },
+];
+
+function getAll() {
+  return Promise.resolve(data);
+}
+
+module.exports = getAll;
